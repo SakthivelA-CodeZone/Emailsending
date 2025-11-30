@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CineHub - Your Cinematic Journey</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b4b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#181112",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 sm:px-6 lg:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">CineHub</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-white/70 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Movies</a>
+<a class="text-white/70 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Theaters</a>
+<a class="text-white/70 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Offers</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#39282b] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#4a3438] transition-colors">
+<span class="material-symbols-outlined text-white text-[20px]">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col gap-10 py-10">
+<section class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4" data-alt="A collage of popular movie posters forming a vibrant background" style='background-image: linear-gradient(rgba(24, 17, 18, 0.8) 0%, rgba(24, 17, 18, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsVMdIWtu4G5fJh7GfJVfitXVlBCaCB2VPb7OstSZB7b5TefooJBLyEqpgs2bKyKzxGOx-bUrKzGPxrYZlYkmisb7_QZ1WkoCbuNAxj2QdGEZxrBo8ZxOHJHKNv7Tc3CQiJF1sMwGYHVUkWErc_JgkrPyE0X1lOdzy21Ou0tYGkli1bLX12OtUQtQ7TuXZMeS-H27q9xZa_N_SMW6wru50Ry-F7G9e0jYsiJSBxkHtSUErdncNvnoa_7Mwt-nbBfvzXuStmyWRWUre");'>
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            Your Cinematic Journey Starts Here
+                                        </h1>
+<h2 class="text-white/80 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            Discover and book tickets for the latest movies in theaters near you.
+                                        </h2>
+</div>
+<label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#b99da1] flex border border-[#543b3f] bg-[#271c1d] items-center justify-center pl-[15px] rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-white focus:outline-0 focus:ring-0 border border-[#543b3f] bg-[#271c1d] focus:border-primary h-full placeholder:text-[#b99da1] px-[15px] border-r-0 pr-2 border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal" placeholder="Search for Movies, Theaters, or Locations" value=""/>
+<div class="flex items-center justify-center rounded-r-lg border-l-0 border border-[#543b3f] bg-[#271c1d] pr-[7px]">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Search</span>
+</button>
+</div>
+</div>
+</label>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-4">
+<div class="pb-3">
+<div class="flex border-b border-white/10 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-white pb-[13px] pt-4" href="#">
+<p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Now Showing</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#b99da1] pb-[13px] pt-4 hover:text-white hover:border-b-white/50 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Upcoming</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#b99da1] pb-[13px] pt-4 hover:text-white hover:border-b-white/50 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Popular</p>
+</a>
+</div>
+</div>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4">
+<div class="flex items-stretch p-4 gap-4">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#271c1d] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col" data-alt="Movie poster for Dune: Part Two" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRHa7mOToBzCma346EV2w1JIP-OdpVF-N5-VzC6XeooyS56M5INzYbbNnv23Eufp2lsfVhd_hMnwP5_wVCzdFbAdv3mHkWh_G7dJiFmTE8NQ7CgQb--Mmy5HXAhKrsdvulDUpduu7eh5eFGzCwHIyUMWKEUUd599dSkn3DrN49CmUfldllg-3n-bTlVTeMfSEUEE_aLs1uucL78JIgUijGg0Vl3uUKo2qwI-2P6Aj0Zl0scKWPImDi3ysAmaCi5ifON-emeEbtk8S0");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-white text-base font-medium leading-normal">Dune: Part Two</p>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">4.8 Stars | Sci-Fi</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/40 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#271c1d] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col" data-alt="Movie poster for The Fall Guy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwWdlfB3c95hJCxgoUnJLCwzLb3SX1j52iy6J9FP0Mdomp0LmQZ-Olnx4qjleFhwDHMAZnjAPZs4UVspBJNkhUOhnOnhcohNsQ59Lx7SrEE0n7CNbPhSizVFY32s-fMjE7F6E_qPVf0PCXyCnc6M6iE34IcwH0-oXo2phCRqb8_fcgWOp_ScIMG0WYt4OC-ZV8tRgpaHaOxUuffTqKJ00fMKdIm9hFmOaEYjwfaKYWpAajKXNbc0nr9Z3BZezoL9_gBwjnv6Kc8VGq");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-white text-base font-medium leading-normal">The Fall Guy</p>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">4.5 Stars | Action</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/40 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#271c1d] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col" data-alt="Movie poster for Inside Out 2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTL4f6Ih1u7DNcKExTnsaqpw3oF5JCmufB8UKg3pPM6_NZMXlxyq3VgkA26TLzh37iNM4NCXu5-Yo2lP5dkvxqLoFtG1dqQfQIxASH1oLMl1vSANrZ2mHTcJlBksjy7ItpEuRCrT7Mr6fs-XvYjttRJXgyyPi5NKYA17GDs0-Ejkqwvpvk9fh488pb8P8vK1IBAeiTqZJ3KUrDX1Y6s31X2tBuzw-hY6G0aHggeoVefWf9FqSRuCgQLp5M00nStBsrJEWLB0pRpPDa");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-white text-base font-medium leading-normal">Inside Out 2</p>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">4.6 Stars | Animation</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/40 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#271c1d] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col" data-alt="Movie poster for Kung Fu Panda 4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjQcGMjmkHBva173ObHz5_VYytmE9qv-Ieg3p48Rymm64ENE4V3EINclobK3tkBuS38BRv2u8s9QQh-K4ZsAJiuTu6Ub8IE0mspXwVjKXsz_FbpYvCXIKwQSZhlwtHGLFTXevQxaucPDyg7Y8_-F_mNp8cZsKFUT9WcqlzW6mIIBtClWQGTsglQDYrCG62E1sD3hHu8_XlT8SUB4r_mrB2vbEpbZZP3Ts1jmWvAgPk5hdPKJVv6ZolWygZksP9w6owtu1CkrIwviiV");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-white text-base font-medium leading-normal">Kung Fu Panda 4</p>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">4.2 Stars | Comedy</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/40 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#271c1d] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-60">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col" data-alt="Movie poster for A Quiet Place: Day One" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCULRAuTGUcYeQmJLPRqeIr9DTpsj-SyVGjWpQpXqbQiy8WxiJoj-agEVZiWIxwv22GIK44zCkrIv1HRBj6_5CPuYnxk-bMRXknxvdsnEss5TQ3PaE483AMg5XzvWV7nmYHIoWsGPt0HHNGXgDv86psANyvvnHmmXE6cm2O962tV0R_gm9Ih7PdTDpzHLOWMAR4tzadPn4_m4E-Z2-O7IzupRKWG9OMLTKQE7bQnkN_wM4v4P0-6yxbaJrd3UBYJrcn2DtcnXKUIPD2");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-white text-base font-medium leading-normal">A Quiet Place: Day One</p>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">4.1 Stars | Horror</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/40 transition-colors">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="flex flex-col gap-6 px-5 py-10 text-center @container border-t border-white/10">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 @[480px]:flex-row @[480px]:justify-around">
+<a class="text-[#b99da1] hover:text-white transition-colors text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+<a class="text-[#b99da1] hover:text-white transition-colors text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+<a class="text-[#b99da1] hover:text-white transition-colors text-base font-normal leading-normal min-w-40" href="#">FAQ</a>
+<a class="text-[#b99da1] hover:text-white transition-colors text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+<a class="text-[#b99da1] hover:text-white transition-colors text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="group" href="#">
+<svg class="text-[#b99da1] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+</svg>
+</a>
+<a class="group" href="#">
+<svg class="text-[#b99da1] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+</svg>
+</a>
+<a class="group" href="#">
+<svg class="text-[#b99da1] group-hover:text-white transition-colors" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+</a>
+</div>
+<p class="text-[#b99da1] text-sm font-normal leading-normal">© 2024 CineHub. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

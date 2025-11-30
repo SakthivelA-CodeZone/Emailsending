@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movie Details Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ee2b4b",
+              "background-light": "#f8f6f6",
+              "background-dark": "#121212",
+            },
+            fontFamily: {
+              "display": ["Be Vietnam Pro", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-900 dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 md:px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">CineHub</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Movies</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Theaters</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Promotions</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">My Account</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-400 flex bg-[#1E1E1E] items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-[#1E1E1E] h-full placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-[#1E1E1E] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0">
+<span class="material-symbols-outlined" style="font-size: 20px;">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiq4tSlUOUYBNRUHrlJ_DVybgiX1k0i59XAEUiEa9WyJpkEnI2BGmlHlE-mrlPvXLX3lz9gO9larx7pnm49xgM2NGDLf-XnsBARKWfx8TffzGFisP_wbaBqF7JEMSMt_kWx-huGYMAXY3-djvhTyzqRo1rYiVPkb5YfiE3sRq2EvC_EO1oZZ5wDUWiIFcN-p0rW6dpxDXLhwhVwzGeytdBeZN33fg7V1N-rZlcqnbCx7WLu4GFSjW3lwMlheS444E_UHERxiwttbm5");'></div>
+</div>
+</header>
+<main class="flex-1 mt-8">
+<div class="relative bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[500px]" data-alt="A movie poster for The Dark Knight featuring the main character." style='background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPLCkTZvq7nBZIT-konkM_E7nznbbke47_2n0jv0tTAEh29VC9co0u-UGENXGYa047V3JloHY61-jjaUJFoK-wabVVve5yGNvbz3B1ZwMNAs83xHRJ5kCsnPklFQyHUvFL_R36Yn99wCrH1b9FOSLm2O0RcnE42Z3kBcwJLDg4SjvtORpidwD5vYcGMUbE6Rwkn-GqytDUlniaHMJCrFoJPfOGfkhXHlVg5rBjqoNQcKjV_92TndaVQIAYfqO1Y9Wb80frjvo1eUgN");'>
+<div class="flex flex-col p-6 md:p-10 space-y-4">
+<h1 class="text-white tracking-light text-4xl md:text-5xl font-bold leading-tight">The Dark Knight</h1>
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-sm px-4">
+<p class="text-white text-sm font-medium leading-normal">Action</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-sm px-4">
+<p class="text-white text-sm font-medium leading-normal">Crime</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-sm px-4">
+<p class="text-white text-sm font-medium leading-normal">Drama</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/10 backdrop-blur-sm px-4">
+<p class="text-white text-sm font-medium leading-normal">Thriller</p>
+</div>
+</div>
+<p class="text-gray-300 text-sm font-normal leading-normal">2h 32m | English | PG-13</p>
+<div class="flex items-center gap-4 bg-[#121212]/50 backdrop-blur-sm px-4 py-2 min-h-14 justify-between max-w-sm rounded-lg">
+<div class="flex items-center gap-4">
+<div class="text-yellow-400 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined" style="font-size: 32px;">star</span>
+</div>
+<p class="text-white text-xl font-bold leading-normal flex-1 truncate">9.0/10</p>
+</div>
+<div class="shrink-0"><a class="text-sm font-medium leading-normal text-gray-300 hover:text-white transition-colors" href="#">See all reviews</a></div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex flex-col md:flex-row items-start gap-8">
+<div class="flex-1 space-y-8">
+<div>
+<h3 class="text-2xl font-bold text-white mb-4">Storyline</h3>
+<p class="text-gray-400 leading-relaxed">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-white mb-4">Cast &amp; Crew</h3>
+<div class="flex gap-6 overflow-x-auto pb-4">
+<div class="flex flex-col items-center gap-2 text-center w-24 shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Christian Bale, actor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMp80OwDQlD35snHeeaz7gKNwC5RQC2kfnBBwUDESfDdPrR0EqBrQi1tp-wJ_TH8_EtARsaBIWGm1FLdQT_Co-MyC3Q2Hgrl8v3edsV-t-u4ZBjNnIaIqy2KNzStOJfxBJs96GE0mysPEHjcqyLaA88OEP4XGl5AMFBpKQALM3rtC8aeWRSyAyJXDFl0koMNYgYp1Z_v4lC8L4x7Onh69fGXy_do_uCffzAl_GEvLf1UBz5m4oi0_hUUAkFnyVTh90TgbsjnlYhyqg"/>
+<p class="text-white font-medium text-sm">Christian Bale</p>
+<p class="text-gray-400 text-xs">Bruce Wayne</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center w-24 shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Heath Ledger, actor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs3KgoDUzJCyXERHOwiwkaUx01ZUplEC9kwsZ2bxbhQL8gGYlp0fDhf0IFq8R8mVS9R95rgQg-jOpbO3OEBaS3jOM9C1sJpSTAnxN4dRovJ2L-musONZpI35uSlWsKl0MVVZ6kfJadIS8Ss0FXEB7lyt9Gy3_mkw19JHaC9Pc7AWBUv-vL-Qcui45cKQBF3MKo8Osf-KgyhEF_3uhsmrzivCOsFyXh6VRT1pE0_U-DCnHmcsHji_J_TVCmsI1_-S5f-Z56BHMtZAX6"/>
+<p class="text-white font-medium text-sm">Heath Ledger</p>
+<p class="text-gray-400 text-xs">Joker</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center w-24 shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Aaron Eckhart, actor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAaoOAbErRifHhgaIpDfqphUjrbNHo6d6RpFQmKh7fZulz9VxZvZgq-VkM4JkM95JDmh4dtL4cCnWfMUAIFzZeLZbDwz5iGvkv3o0IT-DL_fhq5vg7QDsmZTQYxlUQxfCFKd_-n03TmSd3FcceuOE8rMawYAJDNyz_48Oj9vXZnXQ64iwTo12JvZ84r5IzTCbBlXa9JfXPsfhFn8knSf1q21nrInSpB2rm4gCLDcQdqto_HRYiZgMMjzlRZVoeKyiBIjGc4IApcEka"/>
+<p class="text-white font-medium text-sm">Aaron Eckhart</p>
+<p class="text-gray-400 text-xs">Harvey Dent</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center w-24 shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Maggie Gyllenhaal, actress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPlSib2Nt0aoPwV-BSUlvMoc44RyVqgwMAnsMWxe-8MHmV6O4OvWZrCPViP-r3Dl44XxSG_EeFpc8oS9-lQ-Ss48SSEdjjeiab3dMh3z15zLcC3chf_FoxHMiHma1UoZSVPZa7p8qmh48i3mAyxwkz-D0Phf8apkZwHyUaO1y7AqbR8amk2NRnwWg4g6jOP1NuRWZW7OlbFbww4AeK0o-2YVlYGg2pt3fqyfX9Yo794LPrdSe1HBlsBDqHLIjPQ9uml3U8N_VzIbi"/>
+<p class="text-white font-medium text-sm">Maggie Gyllenhaal</p>
+<p class="text-gray-400 text-xs">Rachel Dawes</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center w-24 shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Christopher Nolan, director" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjk6Ct0ROy5LY7AL8SZVc1oNIPvitrKknG9qDJNjNwhX-NuE02pfFnhisz-inJW2OeG3GR5H7uR1LHyvjxFelKfQGa_UB8_BwaSlLJuideXy5eG3PStB__lC7UUUbGtPVdTdrdkTe8gFSSjmUVYDJEC1d7T77DP-6kGJz1DkyyCUickIhwhTnQP9UV8yVs5A465HNIrKBUeCDtlEwxy_sVKUu1TI0CB8dqVXDoSmtOMxwm1bZuWt_xUrKfiRlxQC1n-UseQ3tkBD5S"/>
+<p class="text-white font-medium text-sm">Christopher Nolan</p>
+<p class="text-gray-400 text-xs">Director</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-80 flex-shrink-0 space-y-6">
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-lg h-14 bg-primary text-white text-lg font-bold leading-normal tracking-wide hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(238,43,75,0.5)]">
+<span class="material-symbols-outlined">confirmation_number</span>
+                                Book Tickets
+                            </button>
+<div>
+<h3 class="text-xl font-bold text-white mb-4">Trailer</h3>
+<div class="aspect-w-16 aspect-h-9">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="rounded-lg w-full h-48" frameborder="0" src="https://www.youtube.com/embed/EXeTwQWrcwY" title="YouTube video player"></iframe>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
